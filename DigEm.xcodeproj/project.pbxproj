@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		921B21F1194158940096F6D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921B21F0194158940096F6D6 /* AppDelegate.swift */; };
+		921B21F3194158940096F6D6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 921B21F2194158940096F6D6 /* GameScene.sks */; };
+		921B21F5194158940096F6D6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921B21F4194158940096F6D6 /* GameScene.swift */; };
+		921B21F7194158940096F6D6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921B21F6194158940096F6D6 /* GameViewController.swift */; };
+		921B21FA194158940096F6D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921B21F8194158940096F6D6 /* Main.storyboard */; };
+		921B21FC194158940096F6D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921B21FB194158940096F6D6 /* Images.xcassets */; };
+		921B2208194158940096F6D6 /* DigEmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921B2207194158940096F6D6 /* DigEmTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		921B2202194158940096F6D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 921B21E3194158940096F6D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 921B21EA194158940096F6D6;
+			remoteInfo = DigEm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		921B21EB194158940096F6D6 /* DigEm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigEm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		921B21EF194158940096F6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		921B21F0194158940096F6D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		921B21F2194158940096F6D6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		921B21F4194158940096F6D6 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		921B21F6194158940096F6D6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		921B21F9194158940096F6D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		921B21FB194158940096F6D6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		921B2201194158940096F6D6 /* DigEmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigEmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		921B2206194158940096F6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		921B2207194158940096F6D6 /* DigEmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigEmTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		921B21E8194158940096F6D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921B21FE194158940096F6D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		921B21E2194158940096F6D6 = {
+			isa = PBXGroup;
+			children = (
+				921B21ED194158940096F6D6 /* DigEm */,
+				921B2204194158940096F6D6 /* DigEmTests */,
+				921B21EC194158940096F6D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		921B21EC194158940096F6D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				921B21EB194158940096F6D6 /* DigEm.app */,
+				921B2201194158940096F6D6 /* DigEmTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		921B21ED194158940096F6D6 /* DigEm */ = {
+			isa = PBXGroup;
+			children = (
+				921B21F0194158940096F6D6 /* AppDelegate.swift */,
+				921B21F2194158940096F6D6 /* GameScene.sks */,
+				921B21F4194158940096F6D6 /* GameScene.swift */,
+				921B21F6194158940096F6D6 /* GameViewController.swift */,
+				921B21F8194158940096F6D6 /* Main.storyboard */,
+				921B21FB194158940096F6D6 /* Images.xcassets */,
+				921B21EE194158940096F6D6 /* Supporting Files */,
+			);
+			path = DigEm;
+			sourceTree = "<group>";
+		};
+		921B21EE194158940096F6D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				921B21EF194158940096F6D6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		921B2204194158940096F6D6 /* DigEmTests */ = {
+			isa = PBXGroup;
+			children = (
+				921B2207194158940096F6D6 /* DigEmTests.swift */,
+				921B2205194158940096F6D6 /* Supporting Files */,
+			);
+			path = DigEmTests;
+			sourceTree = "<group>";
+		};
+		921B2205194158940096F6D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				921B2206194158940096F6D6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		921B21EA194158940096F6D6 /* DigEm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 921B220B194158940096F6D6 /* Build configuration list for PBXNativeTarget "DigEm" */;
+			buildPhases = (
+				921B21E7194158940096F6D6 /* Sources */,
+				921B21E8194158940096F6D6 /* Frameworks */,
+				921B21E9194158940096F6D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigEm;
+			productName = DigEm;
+			productReference = 921B21EB194158940096F6D6 /* DigEm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		921B2200194158940096F6D6 /* DigEmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 921B220E194158940096F6D6 /* Build configuration list for PBXNativeTarget "DigEmTests" */;
+			buildPhases = (
+				921B21FD194158940096F6D6 /* Sources */,
+				921B21FE194158940096F6D6 /* Frameworks */,
+				921B21FF194158940096F6D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				921B2203194158940096F6D6 /* PBXTargetDependency */,
+			);
+			name = DigEmTests;
+			productName = DigEmTests;
+			productReference = 921B2201194158940096F6D6 /* DigEmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		921B21E3194158940096F6D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Zach;
+				TargetAttributes = {
+					921B21EA194158940096F6D6 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					921B2200194158940096F6D6 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 921B21EA194158940096F6D6;
+					};
+				};
+			};
+			buildConfigurationList = 921B21E6194158940096F6D6 /* Build configuration list for PBXProject "DigEm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 921B21E2194158940096F6D6;
+			productRefGroup = 921B21EC194158940096F6D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				921B21EA194158940096F6D6 /* DigEm */,
+				921B2200194158940096F6D6 /* DigEmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		921B21E9194158940096F6D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921B21FC194158940096F6D6 /* Images.xcassets in Resources */,
+				921B21F3194158940096F6D6 /* GameScene.sks in Resources */,
+				921B21FA194158940096F6D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921B21FF194158940096F6D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		921B21E7194158940096F6D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921B21F5194158940096F6D6 /* GameScene.swift in Sources */,
+				921B21F7194158940096F6D6 /* GameViewController.swift in Sources */,
+				921B21F1194158940096F6D6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921B21FD194158940096F6D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921B2208194158940096F6D6 /* DigEmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		921B2203194158940096F6D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 921B21EA194158940096F6D6 /* DigEm */;
+			targetProxy = 921B2202194158940096F6D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		921B21F8194158940096F6D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				921B21F9194158940096F6D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		921B2209194158940096F6D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		921B220A194158940096F6D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		921B220C194158940096F6D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = DigEm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		921B220D194158940096F6D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = DigEm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		921B220F194158940096F6D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigEm.app/DigEm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DigEmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		921B2210194158940096F6D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigEm.app/DigEm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DigEmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		921B21E6194158940096F6D6 /* Build configuration list for PBXProject "DigEm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921B2209194158940096F6D6 /* Debug */,
+				921B220A194158940096F6D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		921B220B194158940096F6D6 /* Build configuration list for PBXNativeTarget "DigEm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921B220C194158940096F6D6 /* Debug */,
+				921B220D194158940096F6D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		921B220E194158940096F6D6 /* Build configuration list for PBXNativeTarget "DigEmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921B220F194158940096F6D6 /* Debug */,
+				921B2210194158940096F6D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 921B21E3194158940096F6D6 /* Project object */;
+}
