@@ -8,34 +8,47 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
+    var dickle: Dickle
+    
+    init(size: CGSize) {
+        dickle = Dickle()
+        super.init(size: size)
+    }
+    
+    init(coder aDecoder: NSCoder!) {
+        dickle = Dickle()
+        super.init(coder: aDecoder)
+    }
+    
+    override func didMoveToView(view: SKView!) {
+        self.physicsWorld.contactDelegate = self
+        self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+        
+        spawnPlayer()
+    }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
-        
         for touch: AnyObject in touches {
             let location = touch.locationInNode(self)
             
-            let atlas = SKTextureAtlas(named: "dickle")
-            let sprite = SKSpriteNode(texture: atlas.textureNamed("dickle0000"))
-            
-            var textures: SKTexture[] = []
-            
-            for texname in atlas.textureNames as String[] {
-                textures.append(atlas.textureNamed(texname))
-            }
-            
-            let action = SKAction.repeatActionForever(SKAction.animateWithTextures(textures, timePerFrame: 1))
-            
-            sprite.position = location
-            sprite.setScale(2)
-            sprite.runAction(action)
-            
-            self.addChild(sprite)
+            dickle.moveTo(location)
         }
     }
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }
+    
+    func didBeginContact(contact: SKPhysicsContact) {
+        println("contact made")
+    }
+    
+    func spawnPlayer() {
+        dickle.position = CGPoint(x: 500, y: 200)
+        dickle.setScale(2)
+        
+        self.addChild(dickle)
+    }
 }
+

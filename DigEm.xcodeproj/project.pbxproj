@@ -14,7 +14,10 @@
 		921B21FA194158940096F6D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921B21F8194158940096F6D6 /* Main.storyboard */; };
 		921B21FC194158940096F6D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921B21FB194158940096F6D6 /* Images.xcassets */; };
 		921B2208194158940096F6D6 /* DigEmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921B2207194158940096F6D6 /* DigEmTests.swift */; };
+		9234F8851948035700BEF9A8 /* Dickle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234F8841948035700BEF9A8 /* Dickle.swift */; };
 		92A9117A19415C6600AB0BB8 /* dickle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 92A9117919415C6600AB0BB8 /* dickle.atlas */; };
+		92A9117E19429A8F00AB0BB8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 92A9117D19429A8F00AB0BB8 /* README.md */; };
+		92A9118019429B0200AB0BB8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 92A9117F19429B0200AB0BB8 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,11 @@
 		921B2201194158940096F6D6 /* DigEmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigEmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		921B2206194158940096F6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		921B2207194158940096F6D6 /* DigEmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigEmTests.swift; sourceTree = "<group>"; };
+		9234F8841948035700BEF9A8 /* Dickle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dickle.swift; sourceTree = "<group>"; };
 		92A9117919415C6600AB0BB8 /* dickle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = dickle.atlas; sourceTree = "<group>"; };
 		92A9117C194168DD00AB0BB8 /* Animations.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Animations.playground; sourceTree = "<group>"; };
+		92A9117D19429A8F00AB0BB8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		92A9117F19429B0200AB0BB8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,8 @@
 		921B21E2194158940096F6D6 = {
 			isa = PBXGroup;
 			children = (
+				92A9117F19429B0200AB0BB8 /* .gitignore */,
+				92A9117D19429A8F00AB0BB8 /* README.md */,
 				92A9117B19415C8400AB0BB8 /* Playgrounds */,
 				92A9117819415C2000AB0BB8 /* Resources */,
 				921B21ED194158940096F6D6 /* DigEm */,
@@ -87,6 +95,7 @@
 				921B21F0194158940096F6D6 /* AppDelegate.swift */,
 				921B21F2194158940096F6D6 /* GameScene.sks */,
 				921B21F4194158940096F6D6 /* GameScene.swift */,
+				9234F8841948035700BEF9A8 /* Dickle.swift */,
 				921B21F6194158940096F6D6 /* GameViewController.swift */,
 				921B21F8194158940096F6D6 /* Main.storyboard */,
 				921B21FB194158940096F6D6 /* Images.xcassets */,
@@ -216,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A9118019429B0200AB0BB8 /* .gitignore in Resources */,
 				921B21FC194158940096F6D6 /* Images.xcassets in Resources */,
 				921B21F3194158940096F6D6 /* GameScene.sks in Resources */,
 				921B21FA194158940096F6D6 /* Main.storyboard in Resources */,
@@ -239,6 +249,8 @@
 			files = (
 				921B21F5194158940096F6D6 /* GameScene.swift in Sources */,
 				921B21F7194158940096F6D6 /* GameViewController.swift in Sources */,
+				9234F8851948035700BEF9A8 /* Dickle.swift in Sources */,
+				92A9117E19429A8F00AB0BB8 /* README.md in Sources */,
 				921B21F1194158940096F6D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
