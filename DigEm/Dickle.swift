@@ -8,24 +8,9 @@
 
 import SpriteKit
 
-extension SKTextureAtlas{
-    func getTextureArray() -> SKTexture[] {
-        var textures: SKTexture[] = []
-        
-        for texName in self.textureNames as String[] {
-            textures.append(self.textureNamed(texName))
-        }
-        
-        return textures
-    }
-}
-
-enum ActionKeys: String {
-    case Moving = "Moving"
-}
-
 class Dickle : SKNode {
     let sprite: SKSpriteNode
+    let movementSpeed: CGFloat = 500
     
     init() {
         let atlas = SKTextureAtlas(named: "dickle")
@@ -41,8 +26,9 @@ class Dickle : SKNode {
     }
     
     func moveTo(point: CGPoint) {
-        let action = SKAction.moveTo(point, duration: 1)
-        self.removeActionForKey(ActionKeys.Moving.toRaw())
-        self.runAction(action, withKey: ActionKeys.Moving.toRaw())
+        let duration = self.distanceTo(point) / self.movementSpeed
+        let action = SKAction.moveTo(point, duration: NSTimeInterval(duration))
+        self.removeActionForKey("Moving")
+        self.runAction(action, withKey: "Moving")
     }
 }

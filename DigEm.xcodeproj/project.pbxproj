@@ -15,6 +15,8 @@
 		921B21FC194158940096F6D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921B21FB194158940096F6D6 /* Images.xcassets */; };
 		921B2208194158940096F6D6 /* DigEmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921B2207194158940096F6D6 /* DigEmTests.swift */; };
 		9234F8851948035700BEF9A8 /* Dickle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234F8841948035700BEF9A8 /* Dickle.swift */; };
+		9234F8891949246400BEF9A8 /* SKTextureAtlasExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9234F8881949246400BEF9A8 /* SKTextureAtlasExtensions.swift */; };
+		927F37241949315E00AF6DF3 /* SKNodeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F37231949315E00AF6DF3 /* SKNodeExtensions.swift */; };
 		92A9117A19415C6600AB0BB8 /* dickle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 92A9117919415C6600AB0BB8 /* dickle.atlas */; };
 		92A9117E19429A8F00AB0BB8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 92A9117D19429A8F00AB0BB8 /* README.md */; };
 		92A9118019429B0200AB0BB8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 92A9117F19429B0200AB0BB8 /* .gitignore */; };
@@ -43,8 +45,9 @@
 		921B2206194158940096F6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		921B2207194158940096F6D6 /* DigEmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigEmTests.swift; sourceTree = "<group>"; };
 		9234F8841948035700BEF9A8 /* Dickle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dickle.swift; sourceTree = "<group>"; };
+		9234F8881949246400BEF9A8 /* SKTextureAtlasExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTextureAtlasExtensions.swift; sourceTree = "<group>"; };
+		927F37231949315E00AF6DF3 /* SKNodeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKNodeExtensions.swift; sourceTree = "<group>"; };
 		92A9117919415C6600AB0BB8 /* dickle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = dickle.atlas; sourceTree = "<group>"; };
-		92A9117C194168DD00AB0BB8 /* Animations.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Animations.playground; sourceTree = "<group>"; };
 		92A9117D19429A8F00AB0BB8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		92A9117F19429B0200AB0BB8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +95,7 @@
 		921B21ED194158940096F6D6 /* DigEm */ = {
 			isa = PBXGroup;
 			children = (
+				9234F8871949240A00BEF9A8 /* Extensions */,
 				921B21F0194158940096F6D6 /* AppDelegate.swift */,
 				921B21F2194158940096F6D6 /* GameScene.sks */,
 				921B21F4194158940096F6D6 /* GameScene.swift */,
@@ -129,6 +133,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9234F8871949240A00BEF9A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9234F8881949246400BEF9A8 /* SKTextureAtlasExtensions.swift */,
+				927F37231949315E00AF6DF3 /* SKNodeExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		92A9117819415C2000AB0BB8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +153,6 @@
 		92A9117B19415C8400AB0BB8 /* Playgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				92A9117C194168DD00AB0BB8 /* Animations.playground */,
 			);
 			path = Playgrounds;
 			sourceTree = "<group>";
@@ -248,10 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				921B21F5194158940096F6D6 /* GameScene.swift in Sources */,
+				9234F8891949246400BEF9A8 /* SKTextureAtlasExtensions.swift in Sources */,
 				921B21F7194158940096F6D6 /* GameViewController.swift in Sources */,
 				9234F8851948035700BEF9A8 /* Dickle.swift in Sources */,
 				92A9117E19429A8F00AB0BB8 /* README.md in Sources */,
 				921B21F1194158940096F6D6 /* AppDelegate.swift in Sources */,
+				927F37241949315E00AF6DF3 /* SKNodeExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
