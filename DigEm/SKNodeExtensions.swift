@@ -11,7 +11,6 @@ import SpriteKit
 @objc protocol Collidable {
     @optional func onContact(contact: SKPhysicsContact)
     @optional func onEndContact(contact: SKPhysicsContact)
-    @optional func testOptional(test: Int)
 }
 
 extension SKNode : Collidable {
