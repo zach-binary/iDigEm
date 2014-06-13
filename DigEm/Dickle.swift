@@ -22,6 +22,8 @@ class Dickle : SKNode {
         super.init()
         
         self.physicsBody = SKPhysicsBody(rectangleOfSize: CGSize(width: 56, height: 56))
+        self.physicsBody.collisionBitMask = 1
+        self.physicsBody.contactTestBitMask = 1
         self.addChild(sprite)
     }
     
@@ -30,5 +32,9 @@ class Dickle : SKNode {
         let action = SKAction.moveTo(point, duration: NSTimeInterval(duration))
         self.removeActionForKey("Moving")
         self.runAction(action, withKey: "Moving")
+    }
+    
+    func onContact(contact: SKPhysicsContact) {
+        println(contact.bodyB.node)
     }
 }

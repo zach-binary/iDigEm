@@ -31,6 +31,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         for touch: AnyObject in touches {
             let location = touch.locationInNode(self)
+            
+            var newDickle = Dickle()
+            newDickle.position = location
+            self.addChild(newDickle)
 
             dickle.moveTo(location)
         }
@@ -41,7 +45,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func didBeginContact(contact: SKPhysicsContact) {
-        println("contact made")
+        let bodyA = contact.bodyA.node as Collidable
+        bodyA.onContact?(contact)
     }
     
     func spawnPlayer() {

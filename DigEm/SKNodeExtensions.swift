@@ -8,8 +8,15 @@
 
 import SpriteKit
 
-extension SKNode {
+@objc protocol Collidable {
+    @optional func onContact(contact: SKPhysicsContact)
+    @optional func onEndContact(contact: SKPhysicsContact)
+    @optional func testOptional(test: Int)
+}
+
+extension SKNode : Collidable {
     func distanceTo(point: CGPoint) -> CGFloat {
         return hypotf(point.x - self.position.x, point.y - self.position.y);
     }
 }
+
