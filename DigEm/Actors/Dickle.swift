@@ -8,8 +8,6 @@
 
 import SpriteKit
 
-
-
 class Dickle : SKNode {
     let sprite: SKSpriteNode
     let movementSpeed: CGFloat = 500

@@ -21,6 +21,7 @@
 		92A9117E19429A8F00AB0BB8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 92A9117D19429A8F00AB0BB8 /* README.md */; };
 		92A9118019429B0200AB0BB8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 92A9117F19429B0200AB0BB8 /* .gitignore */; };
 		92B2EE3B19528F500052F95E /* Spickle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2EE3A19528F500052F95E /* Spickle.swift */; };
+		92B2EE3E195293920052F95E /* spickle.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 92B2EE3D195293920052F95E /* spickle.atlas */; };
 		92E04AA2195283CB001BC549 /* Terrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E04AA1195283CB001BC549 /* Terrain.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		92A9117D19429A8F00AB0BB8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		92A9117F19429B0200AB0BB8 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		92B2EE3A19528F500052F95E /* Spickle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spickle.swift; sourceTree = "<group>"; };
+		92B2EE3D195293920052F95E /* spickle.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = spickle.atlas; sourceTree = "<group>"; };
 		92E04AA1195283CB001BC549 /* Terrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 		92A9117819415C2000AB0BB8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				92B2EE3D195293920052F95E /* spickle.atlas */,
 				92A9117919415C6600AB0BB8 /* dickle.atlas */,
 			);
 			path = Resources;
@@ -258,6 +261,7 @@
 				921B21F3194158940096F6D6 /* GameScene.sks in Resources */,
 				921B21FA194158940096F6D6 /* Main.storyboard in Resources */,
 				92A9117A19415C6600AB0BB8 /* dickle.atlas in Resources */,
+				92B2EE3E195293920052F95E /* spickle.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

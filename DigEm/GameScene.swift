@@ -17,6 +17,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
         
         spawnPlayer()
+        spawnSpickle(CGPointMake(600, 500))
         spawnWall(CGPoint(x: 510, y: 700), size: CGSize(width: 24 * 18, height: 24))
         spawnWall(CGPointMake(282, 400), size: CGSizeMake(24, 24 * 26))
         spawnWall(CGPoint(x: 510, y: 100), size: CGSize(width: 24 * 18, height: 24))
@@ -42,8 +43,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func spawnPlayer() {
         dickle.position = CGPoint(x: 500, y: 200)
-        
         self.addChild(dickle)
+    }
+    
+    func spawnSpickle(point: CGPoint) {
+        var spickle = Spickle()
+        spickle.position = point
+        self.addChild(spickle)
     }
 }
 
