@@ -8,6 +8,10 @@
 
 import SpriteKit
 
+@infix func - (left: CGPoint, right: CGPoint) -> CGVector {
+    return CGVector(dx: left.x - right.x, dy: left.y - right.y)
+}
+
 @objc protocol Collidable {
     @optional func onContact(contact: SKPhysicsContact)
     @optional func onEndContact(contact: SKPhysicsContact)

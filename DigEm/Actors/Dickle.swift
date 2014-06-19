@@ -8,6 +8,8 @@
 
 import SpriteKit
 
+
+
 class Dickle : SKNode {
     let sprite: SKSpriteNode
     let movementSpeed: CGFloat = 500
@@ -24,17 +26,19 @@ class Dickle : SKNode {
         self.physicsBody = SKPhysicsBody(rectangleOfSize: CGSize(width: 56, height: 56))
         self.physicsBody.collisionBitMask = 1
         self.physicsBody.contactTestBitMask = 1
+        self.physicsBody.allowsRotation = false
+        self.physicsBody.restitution = 0
         self.addChild(sprite)
     }
     
     func moveTo(point: CGPoint) {
         let duration = self.distanceTo(point) / self.movementSpeed
-        let action = SKAction.moveTo(point, duration: NSTimeInterval(duration))
+        let action = SKAction.moveBy(point - self.position, duration: NSTimeInterval(duration))
         self.removeActionForKey("Moving")
         self.runAction(action, withKey: "Moving")
     }
     
     func onContact(contact: SKPhysicsContact) {
-        println(contact.bodyB.node)
+
     }
 }

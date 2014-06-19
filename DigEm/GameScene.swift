@@ -9,39 +9,25 @@
 import SpriteKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
-    var dickle: Dickle
-    
-    init(size: CGSize) {
-        dickle = Dickle()
-        super.init(size: size)
-    }
-    
-    init(coder aDecoder: NSCoder!) {
-        dickle = Dickle()
-        super.init(coder: aDecoder)
-    }
+    var dickle: Dickle = Dickle()
+    let wallTexture: SKTexture = SKTexture(imageNamed: "walls")
     
     override func didMoveToView(view: SKView!) {
         self.physicsWorld.contactDelegate = self
         self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
         
         spawnPlayer()
+        spawnWall(CGPoint(x: 510, y: 700), size: CGSize(width: 24 * 18, height: 24))
+        spawnWall(CGPointMake(282, 400), size: CGSizeMake(24, 24 * 26))
+        spawnWall(CGPoint(x: 510, y: 100), size: CGSize(width: 24 * 18, height: 24))
+        spawnWall(CGPointMake(738, 400), size: CGSizeMake(24, 24 * 26))
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         for touch: AnyObject in touches {
             let location = touch.locationInNode(self)
-            
-            var newDickle = Dickle()
-            newDickle.position = location
-            self.addChild(newDickle)
-
             dickle.moveTo(location)
         }
-    }
-   
-    override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
     }
     
     func didBeginContact(contact: SKPhysicsContact) {
@@ -49,9 +35,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         bodyA.onContact?(contact)
     }
     
+    func didEndContact(contact: SKPhysicsContact) {
+        let bodyA = contact.bodyA.node as Collidable
+        bodyA.onEndContact?(contact)
+    }
+    
     func spawnPlayer() {
         dickle.position = CGPoint(x: 500, y: 200)
-        dickle.setScale(2)
         
         self.addChild(dickle)
     }
